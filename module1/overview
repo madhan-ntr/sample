@@ -1,0 +1,48 @@
+ex1t1
+## Lab Overview
+
+In this hands-on lab, you will use Microsoft 365 Copilot Chat within Microsoft Teams to analyze and synthesize project-related communications across your Microsoft 365 environment. You will learn how Copilot can aggregate information from emails, meetings, and chats to provide concise summaries, identify action items, and generate stakeholder communications. This exercise demonstrates how executives and business leaders can leverage Copilot to reduce information overload, improve situational awareness, and accelerate decision-making through AI-powered insights.
+
+ex1t2
+## Lab Overview
+
+In this hands-on lab, you will use Microsoft 365 Copilot in Teams to analyze project-related chat conversations and quickly extract meaningful insights. You will generate summaries, identify decisions, action items, risks, and milestones, and use citations to trace information back to the original messages. This approach enables leaders and stakeholders to stay informed about project progress without manually reviewing lengthy chat histories.
+
+
+ex1t3
+## Lab Overview
+
+In this hands-on lab, you will use Microsoft 365 Copilot Chat in Teams to analyze and compare information across multiple projects. You will generate cross-project summaries, identify milestones, risks, dependencies, and action items, and create executive-ready comparison reports and communications. These insights help leaders monitor project health, improve coordination, and make informed strategic decisions.
+
+ex1t4
+## Lab Overview
+
+In this hands-on lab, you will use Microsoft 365 Copilot in Teams to transform project information into audience-specific communications. You will generate executive summaries, create presentation-ready content, draft stakeholder announcements, and adapt project insights for different business scenarios. These capabilities help leaders communicate project status, risks, and priorities more effectively while reducing the time required to prepare updates and briefings. 
+
+
+ex2t1
+## Lab Overview
+
+In this hands-on lab, you will use Microsoft 365 Copilot in Word to transform sales data into executive-ready business insights and strategic recommendations. You will create a professional briefing report, analyze revenue and profit trends, generate data visualizations, and prepare leadership discussion materials. These capabilities help business leaders make informed decisions and effectively communicate organizational performance.
+
+ex2t2
+## Lab Overview
+
+In this hands-on lab, you will use Microsoft 365 Copilot in Excel to analyze budget forecast data and generate financial insights for executive planning. You will forecast revenue and expenses, identify financial risks, create what-if scenarios, and generate executive-ready visualizations that highlight key business trends. These capabilities help leaders make informed decisions, optimize costs, and improve financial performance.
+
+ex2t3
+## Lab Overview
+
+In this hands-on lab, you will use Copilot in Microsoft Planner to create and manage a project plan for a new product launch initiative. You will generate tasks, milestones, dependencies, goals, timelines, and stakeholder communications using natural language prompts. These capabilities help leaders coordinate cross-functional teams, improve project visibility, and accelerate project planning and execution.
+
+
+ex2t4
+## Lab Overview
+
+In this hands-on lab, you will use Microsoft 365 Copilot Agent Builder to create a custom business insights agent for Northwind Traders. You will configure the agent with business-focused instructions, attach approved knowledge sources, and create executive-oriented prompts that provide insights into sales performance, financial forecasts, customer sentiment, and operational health. The completed agent will help leaders access reliable, data-driven insights and support faster business decision-making.
+
+
+ex2t5
+Lab Overview
+
+In this hands-on lab, you will use the Northwind Business Insights Agent to answer executive-level questions related to sales performance, budget forecasts, business risks, and growth opportunities. You will evaluate the agent’s ability to retrieve information from approved knowledge sources, perform cross-document analysis, and generate actionable business recommendations. These capabilities help leaders access timely insights and make informed strategic decisions.
