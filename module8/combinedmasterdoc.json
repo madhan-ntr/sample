@@ -1,0 +1,463 @@
+[
+    {
+    "Name": "MS-4004-combined-masterdoc",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/01-introduction.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/02-Ex1-introduction-synthesize-exercise.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/03-Ex1-1-use-teams-synthesize-communications.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/04-Ex1-2-use-teams-summarize-project.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/05-Ex1-3-use-teams-cross-project.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/06-Ex1-4-use-teams-prepare-summary.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/07-Ex2-introduction-drive-exercise.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/08-Ex2-1-use-word-create-executive-briefing.md",
+        "Order": 8
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/09-Ex2-2-use-excel-perform-budget-analysis.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/10-Ex2-3-use-planner-create-project-plan.md",
+        "Order": 10
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/11-Ex2-4-create-business-insights-agent.md",
+        "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M01-empower-workforce-copilot-executives/12-Ex2-5-use-business-insights-agent.md",
+        "Order": 12
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/01-introduction.md",
+        "Order": 13
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/02-Ex1-introduction-sales-proposal-exercise.md",
+        "Order": 14
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/03-Ex1-1-use-research-agent.md",
+        "Order": 15
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/04-Ex1-2-use-chat-market-research.md",
+        "Order": 16
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/05-Ex1-3-use-word-create-sales-proposal.md",
+        "Order": 17
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/06-Ex1-4-use-outlook-create-email.md",
+        "Order": 18
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/07-Ex2-introduction-automate-proposal-exercise.md",
+        "Order": 19
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/08-Ex2-1-use-word-create-response-template.md",
+        "Order": 20
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/09-Ex2-2-use-excel-analyze-data.md",
+        "Order": 21
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/10-Ex2-3-create-proposal-agent.md",
+        "Order": 22
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/11-Ex2-4-use-teams-agent-refinement.md",
+        "Order": 23
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M02-empower-workforce-copilot-sales/12-Ex2-5-update-agent-instructions.md",
+        "Order": 24
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/01-introduction.md",
+        "Order": 25
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/02-Ex1-introduction-project-planning-exercise.md",
+        "Order": 26
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/03-Ex1-1-use-chat-define-project-framework.md",
+        "Order": 27
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/04-Ex1-2-use-whiteboard-identify-risks.md",
+        "Order": 28
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/05-Ex1-3-use-powerpoint-create-presentation.md",
+        "Order": 29
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/06-Ex2-introduction-transform-adoption-exercise.md",
+        "Order": 30
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/07-Ex2-1-use-chat-identify-upcoming-features.md",
+        "Order": 31
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/08-Ex2-2-use-viva-engage-draft-post.md",
+        "Order": 32
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/09-Ex2-3-use-chat-create-best-practice-tips.md",
+        "Order": 33
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/10-Ex2-4-use-surveys-agent-capture-feedback.md",
+        "Order": 34
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M03-empower-workforce-copilot-it/11-Ex2-5-use-analyst-agent-survey-results.md",
+        "Order": 35
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/01-introduction.md",
+        "Order": 36
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/02-Ex1-introduction-transform-research-exercise.md",
+        "Order": 37
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/03-Ex1-1-create-market-research-agent.md",
+        "Order": 38
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/04-Ex1-2-use-market-research-agent.md",
+        "Order": 39
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/05-Ex1-3-use-analyst-agent-recommendations.md",
+        "Order": 40
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/06-Ex1-4-use-loop-create-campaign-plan.md",
+        "Order": 41
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/07-Ex2-introduction-develop-campaign-exercise.md",
+        "Order": 42
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/08-Ex2-1-use-word-consolidate-reports.md",
+        "Order": 43
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/09-Ex2-2-use-excel-analyze-spreadsheet.md",
+        "Order": 44
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/10-Ex2-3-use-idea-coach-agent.md",
+        "Order": 45
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M04-empower-workforce-copilot-marketing/11-Ex2-4-use-writing-coach-agent.md",
+        "Order": 46
+      },{
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/01-introduction.md",
+        "Order": 47
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/02-Ex1-introduction-optimize-reporting-exercise.md",
+        "Order": 48
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/03-Ex1-1-use-excel-analyze-product-line.md",
+        "Order": 49
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/04-Ex1-2-use-teams-summarize-meeting-notes.md",
+        "Order": 50
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/05-Ex1-3-use-chat-analyze-potential-acquisition.md",
+        "Order": 51
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/06-Ex1-4-use-excel-model-scenarios.md",
+        "Order": 52
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/07-Ex2-introduction-contract-analysis-exercise.md",
+        "Order": 53
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/08-Ex2-1-use-chat-evaluate-vendor-contracts.md",
+        "Order": 54
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/09-Ex2-2-use-powerpoint-create-presentation.md",
+        "Order": 55
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/10-Ex2-3-use-loop-turn-insights-into-actions.md",
+        "Order": 56
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M05-empower-workforce-copilot-finance/11-Ex2-4-use-outlook-create-email.md",
+        "Order": 57
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/01-introduction.md",
+        "Order": 58
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/02-Ex1-introduction-manager-insights-exercise.md",
+        "Order": 59
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/03-Ex1-1-use-excel-identify-manager-metrics.md",
+        "Order": 60
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/04-Ex1-2-use-excel-generate-manager-report.md",
+        "Order": 61
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/05-Ex1-3-use-outlook-communicate-findings.md",
+        "Order": 62
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/06-Ex1-4-use-loop-collaborative-planning.md",
+        "Order": 63
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/07-Ex2-introduction-empower-employees-exercise.md",
+        "Order": 64
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/08-Ex2-1-create-self-service-agent.md",
+        "Order": 65
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/09-Ex2-2-use-viva-engage-announce-agent.md",
+        "Order": 66
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/10-Ex2-3-use-self-service-agent.md",
+        "Order": 67
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M06-empower-workforce-copilot-hr/11-Ex2-4-use-researcher-agent-gather-insights.md",
+        "Order": 68
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/01-introduction.md",
+        "Order": 69
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/02-Ex1-introduction-streamline-initiatives-exercise.md",
+        "Order": 70
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/03-Ex1-1-use-whiteboard-brainstorm-ideas.md",
+        "Order": 71
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/04-Ex1-2-use-word-compare-reports.md",
+        "Order": 72
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/05-Ex1-3-use-powerpoint-create-presentation.md",
+        "Order": 73
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/06-Ex1-4-use-chat-prepare-vendor-engagement.md",
+        "Order": 74
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/07-Ex2-introduction-manage-expansion-exercise.md",
+        "Order": 75
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/08-Ex2-1-use-loop-track-milestones.md",
+        "Order": 76
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/09-Ex2-2-create-facility-expansion-agent.md",
+        "Order": 77
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/10-Ex2-3-use-facility-expansion-agent.md",
+        "Order": 78
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/11-Ex2-4-use-onenote-update-safety-protocols.md",
+        "Order": 79
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M07-empower-workforce-copilot-operations/12-Ex2-5-use-outlook-email-safety-changes.md",
+        "Order": 80
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/01-introduction.md",
+        "Order": 81
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/02-Ex1-introduction-drive-engagement-exercise.md",
+        "Order": 82
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/03-Ex1-1-use-word-develop-communication-brief.md",
+        "Order": 83
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/04-Ex1-2-use-researcher-agent-identify-trends.md",
+        "Order": 84
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/05-Ex1-3-use-excel-analyze-communication-metrics.md",
+        "Order": 85
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/06-Ex1-4-use-powerpoint-create-presentation.md",
+        "Order": 86
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/07-Ex2-introduction-develop-communication-exercise.md",
+        "Order": 87
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/08-Ex2-1-use-viva-engage-create-announcement.md",
+        "Order": 88
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/09-Ex2-2-use-copilot-chat-prepare-meeting.md",
+        "Order": 89
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/10-Ex2-3-use-ideas-coach-agent.md",
+        "Order": 90
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M08-empower-workforce-copilot-communications/11-Ex2-4-create-agent-question-assistant.md",
+        "Order": 91
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/01-introduction.md",
+        "Order": 92
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/02-Ex1-introduction-improve-service-exercise.md",
+        "Order": 93
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/03-Ex1-1-use-whiteboard-map-support-journey.md",
+        "Order": 94
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/04-Ex1-2-use-teams-prepare-support-meeting.md",
+        "Order": 95
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/05-Ex1-3-use-onenote-create-call-template.md",
+        "Order": 96
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/06-Ex1-4-use-analyst-agent-analyze-data.md",
+        "Order": 97
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/07-Ex2-introduction-enhance-resolution-exercise.md",
+        "Order": 98
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/08-Ex2-1-use-loop-build-troubleshooting-checklist.md",
+        "Order": 99
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/09-Ex2-2-use-word-create-response-template.md",
+        "Order": 100
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/10-Ex2-3-use-ideas-coach-agent-create-guide.md",
+        "Order": 101
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M09-empower-workforce-copilot-customer-service/11-Ex2-4-use-outlook-create-insights-email.md",
+        "Order": 102
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/01-introduction.md",
+        "Order": 103
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/02-Ex1-introduction-prepare-litigation-exercise.md",
+        "Order": 104
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/03-Ex1-1-use-chat-create-legal-guidance.md",
+        "Order": 105
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/04-Ex1-2-use-word-summarize-vendor-contract.md",
+        "Order": 106
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/05-Ex1-3-use-researcher-agent-prepare-brief.md",
+        "Order": 107
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/06-Ex1-4-create-agent-regulatory-assistant.md",
+        "Order": 108
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/07-Ex1-5-use-agent-answer-audit-questions.md",
+        "Order": 109
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/08-Ex2-introduction-reform-governance-exercise.md",
+        "Order": 110
+      }, 
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/09-Ex2-1-use-loop-update-company-policy.md",
+        "Order": 111
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/10-Ex2-2-use-excel-visualize-risk-areas.md",
+        "Order": 112
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/11-Ex2-3-use-powerpoint-create-presentation.md",
+        "Order": 113
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/MS-4004-Empower-workforce-copilot-use-cases/refs/heads/Prod/Instructions/Labs/M10-empower-workforce-copilot-legal/12-Ex2-4-use-onenote-create-notebook.md",
+        "Order": 114
+      }
+    ]
+    }
+]
