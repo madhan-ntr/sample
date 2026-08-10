@@ -132,8 +132,9 @@ In this task, you will review how user licensing impacts the ability to install 
 
 1. In the **Stay signed in?** window, select **Yes**.
 
-   > **Note:** If the **Let's keep your account secure** screen appears instead, follow the prompts to set up **Microsoft Authenticator** and complete the MFA setup. For detailed steps, refer to **[Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible](#Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible)** section on **Page 1**.
-   > **Note:** If the **Let's keep your account secure** screen appears instead, follow the prompts to set up **Microsoft Authenticator** and complete the MFA setup. For detailed steps, refer to the **[Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)** section on **Page 1**.
+    > **Note:** If the **Let's keep your account secure** screen appears instead, follow the prompts to set up **Microsoft Authenticator** and complete the MFA setup. For detailed steps, refer to the **[Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)** section on **Page 1**.
+
+   > **Note:** If the **Let's keep your account secure** screen appears instead, follow the prompts to set up **Microsoft Authenticator** and complete the MFA setup. For detailed steps, refer to the **[Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible](started.md#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)** section on **Page 1**.
 
 1. In the **All your work in one place, now easier with AI.** dialog box that appears in the middle of the screen, close it by clicking on **X**.
 
