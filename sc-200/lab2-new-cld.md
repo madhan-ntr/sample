@@ -33,7 +33,9 @@ By the end of this lab, you should be able to:
 
 ## Part 1: Onboard your device and generate an incident
 
-### Task 1: Verify device onboarding
+### Task 1: Onboard WIN1 to Microsoft Defender for Endpoint
+
+WIN1 isn't onboarded yet on a freshly deployed environment — nothing onboards it automatically, so you'll do it directly.
 
 1. Sign in to the **WIN1** virtual machine as **Admin** with the password provided in your CloudLabs environment.
 
@@ -41,7 +43,35 @@ By the end of this lab, you should be able to:
 
 3. Sign in with the admin account and password provided in your CloudLabs environment.
 
-4. From the navigation menu, under **Assets**, select **Devices**. Wait until **WIN1** appears in the Devices list before continuing.
+4. From the navigation menu, scroll down, expand the **System** section, and select **Settings**.
+
+    > **Note:** Some versions of the portal may not have **Settings** under **System** — it may be grouped with *Reports* and *Audit* instead.
+
+5. On the Settings page, select **Device discovery**, and confirm **Standard discovery (recommended)** is selected under Discovery setup.
+
+    > **Hint:** If the option isn't visible, refresh the page.
+
+6. From the navigation menu, expand **System** again, select **Settings**, then select **Endpoints**.
+
+7. Select **Onboarding** in the Device management section, and leave the default operating system selection as **Windows 10 and 11**.
+
+8. In the *1. Onboard a device* area, leave **Connectivity** set to *Streamlined* and **Deployment method** set to *Local Script (for up to 10 devices)*.
+
+9. Select **Download onboarding package**.
+
+10. In the *Downloads* pop-up, highlight *GatewayWindowsDefenderATPOnboardingPackage.zip* and select the folder icon **Show in folder** (or find it under `C:\Users\Admin\Downloads`).
+
+    > **Tip:** If Edge blocks the download, select the ellipsis (**...**) and choose **Keep**, then **Show more** → **Keep anyway** on the follow-up warning.
+
+11. Right-click the zip file, select **Extract All...**, keep *Show extracted files when complete* checked, and select **Extract**.
+
+12. Right-click the extracted **WindowsDefenderATPLocalOnboardingScript.cmd** file, select **Properties**, check the **Unblock** box, and select **OK**.
+
+13. Right-click **WindowsDefenderATPLocalOnboardingScript.cmd** again and select **Run as Administrator**. If Windows SmartScreen appears, select **More info** → **Run anyway**.
+
+14. When the User Account Control prompt appears, select **Yes**. When the script asks a Y/N question, type **Y** and press **Enter**. Wait for the message **"Successfully onboarded machine to Microsoft Defender for Endpoint"**, then press any key to close the window.
+
+15. Back in the Defender XDR portal, from the navigation menu under **Assets**, select **Devices**. Wait until **WIN1** appears in the Devices list — this can take a few minutes after onboarding completes.
 
     > **Note:** If WIN1 doesn't appear after about an hour, that indicates an onboarding or connectivity problem — check with your instructor before continuing.
 
