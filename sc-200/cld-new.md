@@ -10,32 +10,35 @@ lab:
 
 Your organization wants to improve the efficiency of its security operations team and strengthen its incident response capabilities. The office of the CISO has identified Microsoft Security Copilot as a tool that can help analysts investigate incidents, summarize alerts, analyze affected entities, and recommend response actions.
 
-In this lab, you will explore two common Microsoft Security Copilot use cases:
-
-1. Investigating the context and activity associated with a security incident.
-2. Analyzing security artifacts and performing an advanced investigation.
-
 > **Important**
 >
-> The original interactive simulations are no longer available. This lab instead uses your live CloudLabs environment. A freshly deployed tenant has no incidents yet, so **Part 1** below has you onboard your device and generate a real one — a genuine multi-stage attack simulation, not a canned example. Parts 2 and 3 then investigate that real incident.
+> The original interactive simulations are no longer available. This lab instead uses your live CloudLabs environment. A freshly deployed tenant has no incidents yet, so **Exercise 1** below has you onboard your device and generate a real one — a genuine multi-stage attack simulation, not a canned example. Exercises 2 and 3 then investigate that real incident.
 
-## Learning objectives
+## Lab objectives
+
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Onboard your device and generate an incident
+- Exercise 2: Investigate incident context and activity
+- Exercise 3: Analyze artifacts and perform an advanced investigation
 
 By the end of this lab, you should be able to:
 
-* Explain how Microsoft Security Copilot supports incident investigation.
-* Identify important information in an incident summary.
-* Review alerts, devices, users, and other related entities.
-* Describe how Security Copilot can support advanced investigation.
-* Recommend appropriate investigation and response actions.
+- Explain how Microsoft Security Copilot supports incident investigation.
+- Identify important information in an incident summary.
+- Review alerts, devices, users, and other related entities.
+- Describe how Security Copilot can support advanced investigation.
+- Recommend appropriate investigation and response actions.
+
+## Estimated timing: 60 minutes
 
 > **Note:** Devices and user accounts in this environment are limited (a single **WIN1** device and one admin account), so "affected device" and "affected user" throughout this lab refer to that device/account rather than a wider fleet. That's expected here.
 
-## Part 1: Onboard your device and generate an incident
+## Exercise 1: Onboard your device and generate an incident
+
+WIN1 isn't onboarded yet on a freshly deployed environment — nothing onboards it automatically, so you'll do it directly, then run a real (simulated) attack so you have a genuine incident to investigate in the rest of this lab.
 
 ### Task 1: Onboard WIN1 to Microsoft Defender for Endpoint
-
-WIN1 isn't onboarded yet on a freshly deployed environment — nothing onboards it automatically, so you'll do it directly.
 
 1. Sign in to the **WIN1** virtual machine as **Admin** with the password provided in your CloudLabs environment.
 
@@ -71,9 +74,11 @@ WIN1 isn't onboarded yet on a freshly deployed environment — nothing onboards 
 
 14. When the User Account Control prompt appears, select **Yes**. When the script asks a Y/N question, type **Y** and press **Enter**. Wait for the message **"Successfully onboarded machine to Microsoft Defender for Endpoint"**, then press any key to close the window.
 
-15. Back in the Defender XDR portal, go to <https://security.microsoft.com/machines> (the **Assets** menu in this portal doesn't list "Devices" directly — use this link instead). Wait until **WIN1** appears in the Device Inventory list — this can take a few minutes after onboarding completes.
+15. Back in the Defender XDR portal, go to <https://security.microsoft.com/machines> (the **Assets** menu in this portal doesn't list "Devices" directly — use this link instead). Wait until **WIN1** appears in the Device Inventory list — this can take some time (occasionally over an hour) after onboarding completes.
 
-    > **Note:** If WIN1 doesn't appear after about an hour, that indicates an onboarding or connectivity problem — check with your instructor before continuing.
+    > **Note:** If WIN1 doesn't appear at all after several hours, that indicates a genuine onboarding or connectivity problem — check with your instructor before continuing.
+
+    ![Device Inventory list showing the onboarded device with Total, Critical assets, High risk, and Exposure counts.](./Media/sc200-l3-device-inventory-list.png)
 
 ### Task 2: Simulate an attack to generate a real incident
 
@@ -102,7 +107,7 @@ WIN1 isn't onboarded yet on a freshly deployed environment — nothing onboards 
 
     > **Note:** This can take several minutes after step 4 to show up, since Defender for Endpoint needs time to detect and correlate the activity into an incident. If it still hasn't appeared after 15 minutes, verify Defender for Endpoint onboarding completed (Task 1) before retrying Task 2.
 
-## Part 2: Investigate incident context and activity
+## Exercise 2: Investigate incident context and activity
 
 ### Task 1: Review the incident overview
 
@@ -110,156 +115,234 @@ WIN1 isn't onboarded yet on a freshly deployed environment — nothing onboards 
 
 2. Select **Incidents**.
 
-3. Open the incident (it should be the only one listed) — the one you generated in Part 1. Its title may not match what you saw right after Part 1; that's expected (see the note in Part 1, Task 2).
+3. Open the incident (it should be the only one listed) — the one you generated in Exercise 1. Its title may not match what you saw right after Exercise 1; that's expected (see the note in Exercise 1, Task 2).
 
 4. Review the following information:
 
-   * Incident title
-   * Incident severity
-   * Incident status
-   * Assigned analyst
-   * Number of alerts
-   * Affected devices
-   * Affected users
-   * Incident start time
-   * Most recent activity
+   - Incident title
+   - Incident severity
+   - Incident status
+   - Assigned analyst
+   - Number of alerts
+   - Affected devices
+   - Affected users
+   - Incident start time
+   - Most recent activity
 
-6. Record the incident title, severity, and status in your lab report.
+5. Record the incident title, severity, and status in your lab report.
+
+    ![Incident overview page showing title, severity, status, tabs (Attack story, Alerts, Activities, Assets), and the Tasks panel.](./Media/sc200-l3-incident-overview.png)
 
 ### Task 2: Review the incident summary
 
-1. On the open incident page, select the **Summary** tab (and the **Attack story** tab, if shown). If Microsoft Security Copilot is enabled for your tenant, an AI-generated narrative summary appears at the top of the Attack story tab — this is the "Security Copilot summary." If it isn't shown, use the Summary tab's built-in incident overview instead.
+1. Locate the incident summary:
+
+   - **If Security Copilot is enabled for your tenant** (requires purchased Security Compute Units — SCUs): on the open incident page, select **Incident assistant** (top-right, next to "Manage incident"), then select the **Summarize** suggestion card. This generates an AI-written "Incident summary" — this is the **Security Copilot summary**.
+   - **If Security Copilot is not available**: select the **Summary** tab instead. This gives you Defender XDR's own built-in incident overview (alerts and categories, scope, evidence) covering the same ground.
+
+    > **Caution:** Whichever summary you use, treat it as a starting point, not ground truth — Security Copilot's own summary can get details wrong (for example, in testing, it misreported the affected device's operating system) even while getting the overall attack narrative right. Cross-check anything specific against the incident's own tabs (Alerts, Assets, Evidence and response) before relying on it.
 
 2. Read the summary and identify:
 
-   * The suspected initial attack activity
-   * The first affected device or user
-   * The main alerts associated with the incident
-   * The possible attack objective
-   * The sequence of important events
+   - The suspected initial attack activity
+   - The first affected device or user
+   - The main alerts associated with the incident
+   - The possible attack objective
+   - The sequence of important events
 
 3. Write a brief summary of how the incident appears to have started and progressed.
+
+    ![Summary tab showing Alerts and categories, Scope, Evidence, and the Incident information panel.](./Media/sc200-l3-summary-tab.png)
 
 ### Task 3: Examine the incident timeline
 
 1. On the incident page, select the **Attack story** tab. Collapse the Alerts and Incident details panes to see the full **incident graph**, then select the **Play attack story** run icon to replay the attack timeline alert by alert.
+
+    ![Attack story tab with the incident graph and an AI-generated incident description on the right.](./Media/sc200-l3-attack-story.png)
+
 2. Review the alerts in chronological order.
+
 3. Identify the earliest suspicious event.
+
 4. Identify at least two actions that occurred after the initial event.
+
 5. Record the sequence of events in the following format:
 
-| Order | Event or alert | Affected entity | Significance |
-| ----- | -------------- | --------------- | ------------ |
-| 1     |                |                 |              |
-| 2     |                |                 |              |
-| 3     |                |                 |              |
+    | Order | Event or alert | Affected entity | Significance |
+    | ----- | -------------- | --------------- | ------------ |
+    | 1     |                |                 |              |
+    | 2     |                |                 |              |
+    | 3     |                |                 |              |
+
+    ![Alerts pane after selecting Play attack story, with the incident graph and Priority assessment panel showing MITRE ATT&CK techniques.](./Media/sc200-l3-play-attack-story.png)
 
 ### Task 4: Review related entities
 
 1. On the incident page, select the **Assets** tab (some tabs may be hidden — select the ellipsis **...** to see them all) to review the devices, users, IP addresses, files, and processes associated with the incident.
 
-2. Select the affected device (**WIN1**) from the Assets tab. If it isn't a clickable link there, go to <https://security.microsoft.com/machines> instead and select it from the Device Inventory list.
+2. Select the affected device (**WIN1**). If it isn't a clickable link there, go to <https://security.microsoft.com/machines> instead and select it from the Device Inventory list.
 
 3. Record the following information:
 
-   * Device name
-   * Operating system
-   * Risk level
-   * Exposure level (may show "No data available" if the device was onboarded recently — that's expected, not an error)
-   * Logged-on users
-   * Related alerts
+   - Device name
+   - Operating system
+   - Risk level
+   - Exposure level (may show "No data available" if the device was onboarded recently — that's expected, not an error)
+   - Logged-on users (may show "0" or "No data found" even when a user is actively signed in — this is a known reporting delay, not a sign the account isn't real)
+   - Related alerts
 
 4. Select the affected user account (**Admin**). The incident may list two user entities — pick the real named account, not a placeholder identity like `S-1-0-0`.
 
 5. Record the following information:
 
-   * User name
-   * User risk level
-   * Related alerts
-   * Devices used by the account
-   * Any unusual sign-in or account activity
+   - User name
+   - Open incidents / active alerts for this user
+   - MFA status and last password change (typically show "Not available" for a local, non-Entra-joined account — that's expected, and worth noting as a real limitation of local accounts vs. cloud identities)
+   - Devices used by the account
+   - Any unusual sign-in or account activity
 
 ### Task 5: Use Security Copilot prompts
 
-1. On the incident page, look for a **Copilot** icon or pane (usually top-right of the Defender XDR portal). Select it to open the Copilot chat pane.
+You already used the **Summarize** card in Task 2. This task goes further — using Copilot to explore beyond the summary. There are two different Copilot surfaces available, and they work differently.
 
-    > **Note:** Microsoft Security Copilot requires purchased Security Compute Units (SCUs), which are **not** included in this course's trial tenant by default. If no Copilot pane appears, or it shows a message that Copilot isn't provisioned/enabled, that's expected here — skip to step 3.
+> **Note:** Microsoft Security Copilot requires purchased Security Compute Units (SCUs), which are **not** included in this course's trial tenant by default. If neither surface described below is available to you, that's expected here — skip to section C.
 
-2. If Copilot is available, enter prompts similar to the following, then review each generated response and verify it matches the incident evidence you already gathered in Tasks 1–4:
+**A. The embedded Incident assistant (guided, no free text)**
 
-   * Summarize this incident.
-   * What devices and users are affected?
-   * What was the likely initial access method?
-   * Create a timeline of the incident.
-   * What actions should the security analyst take next?
+1. On the incident page, select **Incident assistant** (top-right, next to "Manage incident").
 
-3. If Copilot is not available, answer each of the five prompts above yourself, using only the incident data you reviewed in Tasks 1–4 (Summary/Attack story tab, timeline, Assets tab). This demonstrates the same analysis Copilot would otherwise accelerate.
+    ![Incident "..." menu showing Ask Defender Experts, Export incident as PDF, Merge incidents, and Report incident inaccuracy — no Copilot option in a tenant without SCUs provisioned.](./Media/sc200-l3-no-copilot-menu.png)
 
-## Part 3: Analyze artifacts and perform an advanced investigation
+2. Select the **"Get Copilot recommendations"** suggestion card, and separately, the **"Generate report"** card. Review both responses.
+
+3. Below the responses, Copilot also offers auto-generated follow-up prompts based on this incident's own entities (for example, "Show key details about device '<name>'" or "Show threat intelligence information for IP '<address>'"). Select one of these and review what it returns.
+
+    > **Note:** This pane is fully guided — it only works through these suggestion cards and entity follow-up buttons. There's no free-text box here to type your own question.
+
+**B. The standalone Microsoft Security Copilot app (real free-text prompts)**
+
+4. Open the standalone Microsoft Security Copilot app (a separate portal from Defender XDR, reachable from the Security Copilot area of the Defender navigation menu, or directly).
+
+5. Note your incident's number from its page title in Defender XDR (for example "ID 1:..."). Then, in the Copilot prompt box, enter a prompt that names **both the incident number and the product**, since the same incident number can exist in more than one connected product (for example, this environment also has a Sentinel incident numbered the same way):
+
+    ```
+    Summarize incident <your incident number> in Microsoft Defender
+    ```
+
+    > **Note:** A prompt like "Summarize this incident" (with no number or product named) will fail or pick the wrong product — Copilot has no way to know which incident you mean without that context. Always include the incident number and product name.
+
+6. Review the response, and try the remaining prompts the same way:
+
+   - `What devices and users are affected in incident <number> in Microsoft Defender?`
+   - `What was the likely initial access method for incident <number> in Microsoft Defender?`
+   - `What actions should the security analyst take next for incident <number> in Microsoft Defender?`
+
+7. For each response, compare it against the incident evidence you already gathered in Tasks 1–4 — note anything Copilot gets right and anything it gets wrong or oversimplifies.
+
+    > **Caution:** In testing, Copilot consistently misreported this device's operating system (calling a Windows Server 2022 machine "Windows 10") across multiple independent prompts. Treat this as a real example, not a hypothetical: AI-generated summaries can be confidently wrong on specific facts even when the overall narrative is accurate. Always verify specific details against the incident's own tabs.
+
+**C. If neither Copilot surface is available**
+
+1. Answer the following questions yourself, using only the incident data you reviewed in Tasks 1–4 (Summary tab, timeline, Assets tab):
+
+   - What devices and users are affected?
+   - What was the likely initial access method?
+   - What actions should the security analyst take next?
+
+   This demonstrates the same analysis Copilot would otherwise accelerate.
+
+## Exercise 3: Analyze artifacts and perform an advanced investigation
 
 ### Task 1: Review an alert
 
-1. Open one of the alerts associated with the incident.
+1. On the incident page, select the **Alerts** tab (go through the incident, not the standalone *Alerts* item in the left navigation menu — that shows every alert in the tenant, not just this incident's).
 
-2. Review the following information:
+    ![Incident Alerts tab listing the alerts generated by the attack simulation and the detection test.](./Media/sc200-l3-alerts-tab.png)
 
-   * Alert title
-   * Severity
-   * Detection source
-   * Affected device
-   * Affected user
-   * Process name
-   * File name
-   * IP address
-   * Timestamp
-   * Recommended actions
+2. Select one of the alerts (avoid the `[Test Alert]` one if present — pick one from the real attack simulation, such as "Suspicious PowerShell command line").
 
-3. Record the alert details in your lab report.
+3. Review the following information:
+
+   - Alert title
+   - Severity
+   - Detection source
+   - Affected device
+   - Affected user
+   - Process name
+   - File name
+   - IP address
+   - Timestamp
+   - Recommended actions
+
+4. Record the alert details in your lab report.
+
+    ![Alert detail page showing "What happened," Recommended actions, and the device/user affected.](./Media/sc200-l3-alert-detail.png)
 
 ### Task 2: Analyze a suspicious artifact
 
-1. On the incident page, select the **Evidence and response** tab, then select **IP addresses**. Select the displayed IP address (this is the external address the simulated attack tried to contact, imitating a C2 server) — in the pop-up, select **Open IP address page** to review it in full. (You can also pick a suspicious file, process, or URL from an alert instead, if one is present.)
+1. Go back to the incident page, select the **Evidence and response** tab, then select **IP addresses**.
 
-2. Review the available evidence.
+    ![Evidence and response tab showing the IP addresses evidence list.](./Media/sc200-l3-evidence-ip-list.png)
 
-3. Determine:
+2. Select a **public** IP address from the list (not `127.0.0.1`, which is from the quick detection test, and not a private `192.168.x.x` address) — this is the external address the simulated attack tried to contact, imitating a C2 server. Select **Open IP address page** to review it in full.
 
-   * Why the artifact was identified as suspicious
-   * Which device or user was affected
-   * Whether the artifact appears malicious or benign
-   * What additional investigation is required
+    ![IP address page showing IP summary, Incidents & Alerts, Prevalence, and Threat Intelligence Insights.](./Media/sc200-l3-ip-page.png)
 
-4. Record your conclusion and supporting evidence.
+3. Review the available evidence, including the **Organization (ISP)** and **Reputation** fields.
+
+4. Determine:
+
+   - Why the artifact was identified as suspicious (hint: it's usually the *behavior* around the IP — an unusual process contacting it — not the IP's own reputation, which may show as "Unknown")
+   - Which device or user was affected
+   - Whether the artifact appears malicious or benign
+   - What additional investigation is required
+
+5. Record your conclusion and supporting evidence.
 
 ### Task 3: Investigate process activity
 
-If process information is available:
+1. Go back to the alert from Task 1, and select the **Process tree** tab. Select **Expand all**.
 
-1. Review the process tree.
-2. Identify the parent process.
-3. Identify the suspicious child process.
-4. Review the command-line arguments.
+2. Review the process tree.
+
+3. Identify the parent process and the suspicious child process.
+
+4. Review the command-line arguments shown for the PowerShell process.
+
 5. Look for unusual PowerShell, command prompt, script, or executable activity.
+
 6. Record the suspicious process chain.
 
-Example:
+    ![Process tree showing the parent/child process chain, with Detection source and MITRE ATT&CK technique in the Alert details panel.](./Media/sc200-l3-process-tree.png)
 
-```text
-Parent process:
-Child process:
-Command line:
-Reason the activity is suspicious:
-```
+    Example format for your notes:
+
+    ```text
+    Parent process:
+    Child process:
+    Command line:
+    Reason the activity is suspicious:
+    ```
 
 ### Task 4: Review device and user context
 
-1. Open the affected device page (from the incident's Assets tab, or directly at <https://security.microsoft.com/machines> if it isn't a clickable link there).
+1. Go back to the incident's **Assets** tab, select **Devices**, then select the affected device to open its side panel, and select **Open device page** for the full view.
+
+    ![Device side panel from the incident's Assets tab, with VM details and Open device page link.](./Media/sc200-l3-device-panel.png)
+
+    ![Full device page showing Active alerts, Logged-on users, and Security assessments.](./Media/sc200-l3-device-fullpage.png)
+
 2. Review recent alerts, logged-on users, and device risk.
-3. Open the affected user page (from Assets, or from the user entity shown in the incident graph/Alerts pane).
+
+3. Go back to the incident's **Assets** tab, select **Users**, then select the affected user to open its side panel.
+
+    ![User side panel showing Protection, User threat (Open incidents, Active alerts), and Top UEBA anomalies.](./Media/sc200-l3-user-panel.png)
+
 4. Review sign-in activity, related incidents, and associated devices.
+
 5. Determine whether the incident appears limited to one device or involves multiple entities.
 
-    > **Note:** In this trial tenant there's normally only one device (WIN1), but the incident may show **two user entities** even though only one real account exists (the second is typically a placeholder identity like `S-1-0-0`, not a second real user). Treat this as expected — pick the real named account when the guide asks you to select "the affected user account." In a production tenant with more assets, the same review steps would scale to a wider set of entities.
+    > **Note:** In this trial tenant there's normally only one device (WIN1) and one user (Admin), so you should expect the incident to appear limited to a single device/user — that's a realistic scenario, just a small one. In a production tenant with more assets, the same review steps would scale to a wider set of entities.
 
 ### Task 5: Identify recommended response actions
 
@@ -269,14 +352,14 @@ Based on the available evidence, identify appropriate response actions.
 
 Possible actions include:
 
-* Isolate the affected device.
-* Disable or reset the affected user account.
-* Block a malicious IP address or URL.
-* Quarantine or remove a malicious file.
-* Run an antivirus scan.
-* Collect an investigation package.
-* Review additional devices for similar activity.
-* Escalate the incident to a senior analyst.
+- Isolate the affected device.
+- Disable or reset the affected user account.
+- Block a malicious IP address or URL.
+- Quarantine or remove a malicious file.
+- Run an antivirus scan.
+- Collect an investigation package.
+- Review additional devices for similar activity.
+- Escalate the incident to a senior analyst.
 
 Select at least three actions and explain why each action is appropriate.
 
