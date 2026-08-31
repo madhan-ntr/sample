@@ -1,0 +1,615 @@
+# Build AI Agents with Portal and VS Code
+
+**Estimated Duration:** 45 Minutes
+
+## Lab Overview
+
+In this hands-on lab, you will build an AI agent solution using Microsoft Foundry and the Foundry Toolkit for Visual Studio Code. You will create a Foundry project, configure an AI agent with custom instructions, grounding data, file search, and code interpreter capabilities. You will then test the agent in the Foundry portal and Visual Studio Code before developing a Python client application that interacts with the agent programmatically. Finally, you will configure the application environment and validate the agent's ability to perform policy searches, data analysis, and visualization tasks.
+
+## Lab Objectives
+
+In this exercise, you will perform:
+
+* Task 1: Get started with Microsoft Foundry
+* Task 2: Create and Configure the AI Agent
+* Task 3: Test the agent in the Foundry portal
+* Task 4: Interact with the agent using Visual Studio Code
+* Task 5: Create a client application to interact with the agent
+* Task 6: Configure the environment and run the application
+* Task 7: Test the client application
+
+### Task 1: Get started with Microsoft Foundry
+
+In this task, you'll sign in to the Microsoft Foundry portal, access a pre-configured Microsoft Foundry project, and familiarize yourself with the project workspace that will be used throughout the lab.
+
+1. Copy the **Microsoft Foundry** link and paste it into a new browser tab to access the portal: `https://ai.azure.com/`
+
+1. On the **Microsoft Foundry** home page, click on **Sign in**.
+
+     ![](./media/lab2new-p1.png)
+
+1. If prompted to sign in, enter your credentials:
+ 
+   - **Email/Username:** Enter <inject key="AzureAdUserEmail"></inject> **(1)** and click on **Next (2)**.
+ 
+        ![Enter Your Username](./media/ai103-lab2-t1p2.png)
+ 
+   - **Password:** Enter <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
+ 
+      ![Enter Your Password](./media/ai103-lab2-t1p3.png)
+
+1. If prompted to **Stay signed in?**, you can click **No**.
+
+    ![](./media/ai103-lab2-t1p4.png)
+
+### Task 1.1: Create a Microsoft Foundry Project (READ ONLY)
+
+> ### **Note:** <span style="color:maroon"> A Microsoft Foundry resource and project have already been created and configured for your lab environment. To optimize AI resource usage during the lab, additional Microsoft Foundry resources cannot be created. This is a **read-only** task provided for demonstration purposes and does not require any action. For the remainder of the lab, please use the pre-configured Microsoft Foundry resource and project that have been provisioned for your environment.
+>
+> </span>
+
+In this task, you'll learn how to create a Microsoft Foundry project by configuring the required Azure settings, including the Foundry resource, region, subscription, and resource group. This is a demonstration only and does not require any action during the lab.
+
+1. On the **All resources** page, click on **Create Project**.
+
+   ![](./media/lab2new-p5.png)
+
+1. In the **Create a project** pane, enter a unique project name like **myproject-<inject key="DeploymentID" enableCopy="false" /> (1)** Verify that the **Foundry resource (2)** is automatically populated, set the **Region** to **<inject key="Location" enableCopy="false" /> (3)**, confirm that the default **Subscription (4)** is selected, and choose the appropriate **Resource group (5)**. Ensure that the **Set up recommended resources so I can explore everything Foundry has to offer** option is **disabled (6)**, and then select **Create (7)**.
+
+   ![](./media/lab2new-p6.png)
+
+1. In the **Your project is set up. What would you like to do next ?** pop-up, click **X** button to dismiss the window.
+
+   ![](./media/lab2new-p7.png)
+
+1. After creating a project in the new **Foundry** portal, it should open in a page similar to the following image:
+
+   ![](./media/lab2new-p8.png)
+
+### Task 1.2: Open the Pre-configured Microsoft Foundry Project
+
+In this task, you'll access the pre-configured Microsoft Foundry project, dismiss the welcome prompt, and explore the project workspace that will be used for the remainder of the lab.
+
+1. From the **All resources** page select the project named **myproject<inject key="DeploymentID"></inject>** that has been already been created for you to open it. You will use this project throughout the remainder of the lab.
+
+   ![](./media/lab2new-p9.png)
+
+1. In the **Your project is set up. What would you like to do next ?** pop-up, click **X** button to dismiss the window.
+
+   ![](./media/lab2new-p10.png)
+
+1. After selecting the project in the **Foundry** portal, it should open in a page similar to the following image:
+
+   ![](./media/lab2new-p11.png)
+
+### Task 2: Create and Configure the AI Agent
+
+In this task, you'll customize the agent's behavior by defining instructions and attaching grounding data. You'll configure file search capabilities using an IT policy document and enable the code interpreter tool to analyze structured datasets.
+
+1. On the **Microsoft Foundry** Home page, in the **Build an agent** section, select **Start building**.
+
+     ![](./media/ai103l6-08-l1.png)
+
+1. In the **Create an agent** window, enter the **it-support-agent-<inject key="DeploymentID" enableCopy="false" />** in the **Agent name (1)** field, and then select **Create (2)**.
+
+     ![](./media/ai103l6-08-l2.png)
+
+    - The playground will open for your newly created agent. You'll see that an available deployed model is already selected for you.
+
+1. In the agent playground, set the **Instructions** to:
+
+    ```prompt
+    You are an IT Support Agent for Contoso Corporation.
+    You help employees with technical issues and IT policy questions.
+    
+    Guidelines:
+    - Always be professional and helpful
+    - Use the IT policy documentation to answer questions accurately
+    - If you don't know the answer, admit it and suggest contacting IT support directly
+    - When creating tickets, collect all necessary information before proceeding
+    ```
+
+      ![](./media/ai103l6-08-l3.png)
+      
+1. Download the IT policy document from the lab repository. Open a new browser tab and navigate to:
+
+    ```
+    https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-agents/main/Labfiles/01-build-agent-portal-and-vscode/IT_Policy.txt
+    ```
+
+1. In Microsoft Edge, right-click the page and select **Save as**.
+
+    ![](./media/ai103l6-08-l4.png)
+
+    > **Note:** This document contains sample IT policies for password resets, software installation requests, and hardware troubleshooting.
+
+1. In the **Save As** dialog, select **Downloads (1)** and then select **Save (2)**.
+
+    ![](./media/ai103l6-08-l5.png)
+
+1. Return to the agent playground. In the **Tools** section, select **Add (1)**, enable the **</> Code interpreter (2)** toggle and then select **Add tools (3)**
+
+     ![](./media/ai103l6-08-l6.png)
+
+1. On **Select a tool** page, under the **Configure** section, select **File search (1)** and click on **Add tool (2)**
+
+      ![](./media/ai103l65.png)
+
+1. Under **Attach files**, browse to and upload the `IT_Policy.txt` file you just downloaded, and then select **Attach**.
+
+      ![](./media/ai103l66.png)
+
+1. Wait for the file to be indexed. You'll see a confirmation when it's ready.
+
+1. Now let's add some performance data for the code interpreter to analyze. Download the system performance data file from:
+
+    ```
+    https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-agents/main/Labfiles/01-build-agent-portal-and-vscode/system_performance.csv
+    ```
+
+    Save this file to your local machine.
+
+1. To the right of **</> Code interpreter**, select **+ Files**, and then upload the `system_performance.csv` file you just downloaded.
+
+    > **Note**: This CSV file contains simulated system metrics (CPU, memory, disk usage) over time that the agent can analyze.
+
+      ![](./media/ai103l67.png)
+
+      ![](./media/ai103l68.png)
+      
+1. Save the agent.
+
+   ![](./media/ai103l69.png)
+
+## Task 3: Test your agent
+
+In this task, you'll interact with the agent in the Foundry playground to validate its configuration. You'll test policy-based question answering, verify the use of grounding data, and evaluate the agent's ability to analyze datasets and generate visualizations.
+
+1. In the chat interface on the right side of the playground, enter the following prompt:
+
+    ```
+    What's the policy for password resets?
+    ```
+
+   ![](./media/ai103l610.png)
+   
+1. Review the response. The agent should reference the IT policy document and provide accurate information about password reset procedures.
+
+1. Try another prompt:
+
+    ```
+    How do I request new software?
+    ```
+
+1. Again, review the response and observe how the agent uses the grounding data.
+
+1. Now test the code interpreter with a data analysis request:
+
+    ```
+    Can you analyze the system performance data and tell me if there are any concerning trends?
+    ```
+
+1. The agent should use the code interpreter to analyze the CSV file and provide insights about system performance.
+
+1. Try asking for a visualization:
+
+    ```
+    Create a chart showing CPU usage over time from the performance data
+    ```
+
+1. The agent will use code interpreter to generate visualizations and analysis.
+
+Great! You've created an agent with grounding data, file search, and code interpreter capabilities. In the next section, you'll interact with this agent programmatically using VS Code.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="149c6289-6658-473d-87d2-0b172d24583e" />
+
+## Task 4: Interact with your agent using VS Code
+
+As a developer, you may spend some time working in the Foundry portal; but you’re also likely to spend a lot of time in Visual Studio Code. The Foundry Toolkit for VS Code extension provides a convenient way to work with Foundry project resources without leaving the development environment.
+
+In this task, you'll install and configure the Foundry Toolkit extension for Visual Studio Code. You'll connect to your Foundry project, access the agent created in the portal, and test its functionality directly from the development environment.
+
+### Install and configure the VS Code extension
+
+If you already have installed the Foundry Toolkit extension, you can skip this section.
+
+1. Open Visual Studio Code.
+
+2. Select **Extensions (1)** from the left pane (or press **Ctrl+Shift+X**).
+
+   ![](./media/ai103l611.png)
+   
+3. Search the extensions marketplace for the `Foundry Toolkit for VS Code` extension from Microsoft and select **Install**.
+
+    Installing the Foundry Toolkit Extension will add the Foundry Toolkit extension to VS Code.
+
+    > **Note**: The extension is currently listed as **Foundry Toolkit**, but some VS Code labels, commands, or older screenshots may still refer to **AI Toolkit**. In this lab, treat those names as referring to the same extension experience.
+
+4. After installing the extension, select the Foundry Toolkit icon in the sidebar.
+
+    You should be prompted to sign in to your Azure account if you haven't already.
+
+### Test your agent in VS Code
+
+Before writing any code, you can interact with your agent directly in the extension interface.
+
+1. Under **Microsoft Foundry Resources**, choose **Set Default Project** and select **Sign in to Azure**
+
+   ![](./media/ai103l612.png)
+   
+1. When prompted that the Azure Resources extension wants to sign in using your Microsoft account, select **Allow**to continue the authentication process.
+
+   ![](./media/ai103l613.png)
+   
+1. Complete the sign-in process using the account provided for this lab.
+
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
+        
+1. Wait for Visual Studio Code to finish connecting to your Azure account before proceeding to the next step.
+  
+1. Select the project that created in previous step.
+
+   ![](./media/ai103l614.png)
+
+1. Expand the project section. Under **Prompt Agents**, you should see the `it-support-agent-<inject key="DeploymentID" enableCopy="false" />` you created in the portal. Select the agent name to open the Agent Builder interface.
+
+   ![](./media/ai103l615.png)
+   
+1. The agent playground will appear in the Agent Builder interface, allowing you to interact with the agent and configure its settings without leaving VS Code.
+
+3. In the playground chat pane, type a question such as:
+
+    ```
+    What is the policy for reporting a lost or stolen device?
+    ```
+
+4. Review the agent's response. It should use the grounding data you uploaded earlier to provide relevant IT policy information.
+
+    > **Tip**: You can use this built-in playground to quickly test your agent's instructions and knowledge without writing any code.
+
+## Task 5: Create a client application to interact with your agent
+
+In this task, you'll clone a GitHub repository and develop a Python client application that communicates with your AI agent. You'll configure the application to send prompts, process responses, manage conversations, and handle generated files and visual outputs.
+
+1. In VS Code, open the Command Palette (**Ctrl+Shift+P** or **View > Command Palette**).
+
+1. Type **Git: Clone** and select it from the list.
+
+1. Enter the repository URL:
+
+    ```
+    https://github.com/MicrosoftLearning/mslearn-ai-agents.git
+    ```
+
+1. Choose a location on your local machine to clone the repository.
+
+1. When prompted, select **Open** to open the cloned repository in VS Code.
+
+1. Once the repository opens, select **File > Open Folder** and navigate to `mslearn-ai-agents/Labfiles/01-build-agent-portal-and-vscode/Python`, then choose **Select Folder**.
+
+1. In the Explorer pane, open the `agent_with_functions.py` file. If the file is empty, replace its contents with the following code.
+
+1. Use the following code:
+
+    ```python
+    import base64
+    import os
+    from pathlib import Path
+
+    from azure.ai.projects import AIProjectClient
+    from azure.identity import DefaultAzureCredential
+    from dotenv import load_dotenv
+
+    OUTPUT_DIR = Path("agent_outputs")
+
+    def get_output_path(filename):
+        """Create a unique path for generated files."""
+        OUTPUT_DIR.mkdir(exist_ok=True)
+        file_name = Path(filename).name
+        stem = Path(file_name).stem or "output"
+        suffix = Path(file_name).suffix
+        output_path = OUTPUT_DIR / file_name
+
+        counter = 1
+        while output_path.exists():
+            output_path = OUTPUT_DIR / f"{stem}_{counter}{suffix}"
+            counter += 1
+
+        return output_path
+
+    def save_bytes(file_bytes, filename):
+        """Save binary content to a local file."""
+        output_path = get_output_path(filename)
+        with open(output_path, "wb") as file_handle:
+            file_handle.write(file_bytes)
+        return output_path
+
+    def save_image(image_data, filename):
+        """Save base64 image data to a file."""
+        return save_bytes(base64.b64decode(image_data), filename)
+
+    def download_container_file(openai_client, annotation, downloaded_files):
+        """Download a cited container file once and return its local path."""
+        cache_key = (annotation.container_id, annotation.file_id)
+        if cache_key in downloaded_files:
+            return downloaded_files[cache_key]
+
+        file_content = openai_client.containers.files.content.retrieve(
+            file_id=annotation.file_id,
+            container_id=annotation.container_id,
+        )
+        output_path = save_bytes(
+            file_content.read(),
+            annotation.filename or f"{annotation.file_id}.bin",
+        )
+        downloaded_files[cache_key] = output_path
+        return output_path
+
+    def format_output_text(content_item, openai_client, downloaded_files):
+        """Replace sandbox file citations with local file paths."""
+        text = content_item.text or ""
+        replacements = []
+        referenced_files = set()
+
+        for annotation in content_item.annotations or []:
+            if getattr(annotation, "type", "") != "container_file_citation":
+                continue
+
+            output_path = download_container_file(
+                openai_client,
+                annotation,
+                downloaded_files,
+            )
+            replacement_text = f"{annotation.filename} (saved to {output_path})"
+            referenced_files.add(output_path)
+
+            start_index = getattr(annotation, "start_index", None)
+            end_index = getattr(annotation, "end_index", None)
+            if start_index is not None and end_index is not None:
+                replacements.append((start_index, end_index, replacement_text))
+                continue
+
+            annotated_text = getattr(annotation, "text", "")
+            if annotated_text:
+                text = text.replace(annotated_text, replacement_text)
+
+        for start_index, end_index, replacement_text in sorted(
+            replacements,
+            reverse=True,
+        ):
+            text = (
+                f"{text[:start_index]}"
+                f"{replacement_text}"
+                f"{text[end_index:]}"
+            )
+
+        return text, referenced_files
+
+    def main():
+        # Initialize the project client
+        load_dotenv()
+        project_endpoint = os.environ.get("PROJECT_ENDPOINT")
+        agent_name = os.environ.get("AGENT_NAME", "it-support-agent")
+
+        if not project_endpoint:
+            print("Error: PROJECT_ENDPOINT environment variable not set")
+            print("Please set it in your .env file or environment")
+            return
+
+        print("Connecting to Microsoft Foundry project...")
+        credential = DefaultAzureCredential()
+        project_client = AIProjectClient(
+            credential=credential,
+            endpoint=project_endpoint,
+        )
+
+        # Get the OpenAI client for Responses API
+        openai_client = project_client.get_openai_client()
+
+        # Get the agent created in the portal
+        print(f"Loading agent: {agent_name}")
+        agent = project_client.agents.get(agent_name=agent_name)
+        print(f"Connected to agent: {agent.name} (id: {agent.id})")
+
+        # Create a conversation
+        conversation = openai_client.conversations.create(items=[])
+        print(f"Conversation created (id: {conversation.id})")
+
+        # Chat loop
+        print("\n" + "=" * 60)
+        print("IT Support Agent Ready!")
+        print("Ask questions, request data analysis, or get help.")
+        print("Type 'exit' to quit.")
+        print("=" * 60 + "\n")
+
+        while True:
+            user_input = input("You: ").strip()
+
+            if user_input.lower() in ["exit", "quit", "bye"]:
+                print("Goodbye!")
+                break
+
+            if not user_input:
+                continue
+
+            # Add user message to conversation
+            openai_client.conversations.items.create(
+                conversation_id=conversation.id,
+                items=[
+                    {
+                        "type": "message",
+                        "role": "user",
+                        "content": user_input,
+                    }
+                ],
+            )
+
+            # Get response from agent
+            print("\n[Agent is thinking...]")
+            response = openai_client.responses.create(
+                conversation=conversation.id,
+                extra_body={
+                    "agent_reference": {
+                        "name": agent.name,
+                        "type": "agent_reference",
+                    }
+                },
+                input="",
+            )
+
+            # Display response and save any generated files locally
+            handled_output = False
+            downloaded_files = {}
+            referenced_files = set()
+            image_count = 0
+
+            if hasattr(response, "output") and response.output:
+                for item in response.output:
+                    item_type = getattr(item, "type", "")
+
+                    if item_type == "message" and getattr(item, "content", None):
+                        for content_item in item.content:
+                            if getattr(content_item, "type", "") != "output_text":
+                                continue
+
+                            formatted_text, message_files = format_output_text(
+                                content_item,
+                                openai_client,
+                                downloaded_files,
+                            )
+                            referenced_files.update(message_files)
+
+                            if formatted_text:
+                                print(f"\nAgent: {formatted_text}\n")
+                                handled_output = True
+
+                    elif hasattr(item, "text") and item.text:
+                        print(f"\nAgent: {item.text}\n")
+                        handled_output = True
+
+                    elif item_type == "image":
+                        image_count += 1
+                        filename = f"chart_{image_count}.png"
+
+                        if hasattr(item, "image") and hasattr(item.image, "data"):
+                            file_path = save_image(item.image.data, filename)
+                            print(
+                                f"\n[Agent generated a chart - saved to: {file_path}]"
+                            )
+                        else:
+                            print("\n[Agent generated an image]")
+
+                        handled_output = True
+
+                for file_path in downloaded_files.values():
+                    if file_path not in referenced_files:
+                        print(
+                            f"\n[Agent generated a file - saved to: {file_path}]"
+                        )
+                        handled_output = True
+
+            if (
+                not handled_output
+                and hasattr(response, "output_text")
+                and response.output_text
+            ):
+                print(f"\nAgent: {response.output_text}\n")
+
+    if __name__ == "__main__":
+        main()
+    ```
+
+1. Save the `agent_with_functions.py` file (**Ctrl+S** or **File > Save**).
+
+## Task 6: Configure environment and run the application
+
+In this task, you'll configure the application settings by updating environment variables, installing required dependencies, authenticating with Azure, and running the client application to establish communication with the AI agent.
+
+1. In the Explorer pane, you'll see `.env.example` and `requirements.txt` files already present in the folder.
+
+1. Duplicate the `.env.example` file, and rename it to `.env`.
+
+1. In the `.env` file, replace `your_project_endpoint_here` with your actual project endpoint:
+
+    ```
+    PROJECT_ENDPOINT=<your_project_endpoint>
+    AGENT_NAME=it-support-agent
+    ```
+
+    **To get your project endpoint:** In VS Code, open the **Foundry Toolkit** extension, right-click on your active project, and select **Copy Endpoint**. If **Copy Endpoint** isn't available in your installed version of Foundry Toolkit, open the Microsoft Foundry portal, go to your project, and copy the project endpoint from the project overview page instead.
+
+1. Save the `.env` file (**Ctrl+S** or **File > Save**).
+
+1. Open a terminal in VS Code (**Terminal > New Terminal**) and navigate to the working directory.
+
+1. Install the required packages and login:
+
+    ```bash
+    python -m venv labenv
+    .\labenv\Scripts\Activate.ps1
+    pip install -r requirements.txt
+    ```
+
+    ```bash
+    az login
+    ```
+
+1. Run the application:
+
+    ```bash
+    python agent_with_functions.py
+    ```
+
+## Task 7: Test the client application
+
+In this task, you'll validate the capabilities of the client application by performing policy searches, analyzing datasets, generating charts and visualizations, and testing the agent's ability to combine file search and code interpreter tools to deliver intelligent responses.
+
+When the agent starts, try these prompts to test different capabilities:
+
+1. Test policy search with file search:
+
+    ```
+    What's the policy for password resets?
+    ```
+
+2. Request data analysis with code interpreter:
+
+    ```
+    Analyze the system performance data and identify any periods where CPU usage exceeded 80%
+    ```
+
+3. Request a visualization:
+
+    ```
+    Create a line chart showing memory usage trends over time
+    ```
+
+    The application saves generated charts and cited files to the `agent_outputs` folder and prints the local file path in the terminal.
+
+4. Ask for statistical analysis:
+
+    ```
+    What are the average, minimum, and maximum values for disk usage in the performance data?
+    ```
+
+5. Combined analysis:
+
+    ```
+    Find any correlation between high CPU usage and memory usage in the performance data
+    ```
+
+Observe how the agent uses both file search (for policy questions) and code interpreter (for data analysis) to fulfill your requests. The code interpreter will analyze the CSV data, perform calculations, and can even generate visualizations. Type `exit` when done testing.
+
+## Summary
+
+In this exercise, you created and configured an AI agent using Microsoft Foundry and the Foundry Toolkit for Visual Studio Code. You enhanced the agent with custom instructions, grounding data, file search, and code interpreter capabilities to support intelligent responses and data analysis. You then tested the agent in both the Foundry portal and Visual Studio Code, developed a Python client application to interact with the agent programmatically, and configured the required environment settings. Finally, you validated the solution by performing policy searches, analyzing datasets, and generating visualizations, demonstrating how AI agents can combine multiple tools to deliver rich, context-aware experiences.
+
+## Congratulations, you’ve successfully completed the hands-on lab!
